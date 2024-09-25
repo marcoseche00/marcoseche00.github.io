@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Website Marcos Echevarria-Eirea</title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel ="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Marcos Echevarria-Eirea</div>
+        <div >
+            <ul class="nav-links">
+                <li > <a href="#about">About</a></li>
+                <li > <a href="#research">Research</a></li>
+                <li > <a href="#teaching">Teaching</a></li>
+                <li > <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Marcos Echevarria-Eirea</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links"> 
+                <li > <a href="#about" onclick="toggleMenu()">About</a></li>
+                <li > <a href="#research" onclick="toggleMenu()">Research</a></li>
+                <li > <a href="#teaching" onclick="toggleMenu()">Teaching</a></li>
+                <li > <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/36cefae9-d107-48a5-8de9-3e97ba2fa2a8.jpeg" 
+            alt="Marcos Echevarria-Eirea profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello! I'm </p>
+            <h1 class="title">Marcos Echevarria-Eirea</h1>
+            <p class="section__text__p2">PhD Student 
+                at UNC-Chapel Hill</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/Marcos_Echevarria_Eirea_Academic_CV.pdf')">Download CV
+            </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">Contact
+            </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/marcosechevarriaeirea/'">
+                <img src="./assets/scholar.png" alt="My Googlge Scholar profile"
+                class="icon" onclick="location.href='https://scholar.google.com/citations?user=tbuKw4oAAAAJ&hl=es&oi=ao'">
+                <img src="./assets/github.png" alt="My GitHub profile"
+                class="icon" onclick="location.href='https://github.com/marcoseche00'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/IMG_2815.jpeg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="text-container">
+                        <p>I am a PhD student at the Department of Political Science at the University of North Carolina at Chapel Hill. Prior to joining UNC, I received my MSc in Political Science from the London School of Economics and Political Science (LSE) in 2023. I also hold a BA in Politics with Economics from Loughborough University.
+                            <br><br>
+                            My research focuses on political behaviour, public opinion, and political parties from a comparative perspective, and to a lesser degree, political methodology. In particular, I am interested in social media network models that uncover the possible effect of intergroup contact on collective identities.
+                            <br><br>
+                            I also work as a Research Assistant at the Chapel Hill Expert Survey (<a href="https://www.chesdata.eu/">CHES</a>) and as Teaching Assistant for Introduction to Comparative Politics at UNC.
+                            <br><br>
+                            Other interests and hobbies of mine are:
+                            <br><br>
+                            <ul>
+                                <li> Reading (<a href="https://www.goodreads.com/user/show/142462009-marcos-echevarria">my Goodreads</a>)</li>
+                                <li> Chess (<a href="https://www.chess.com/member/marcosechevarria">let's play!</a>)</li>
+                                <li> Running and nature</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#research'">
+    </section>
+    <section id="research">
+        <h1 class="title">Research</h1>
+        <div class="section-container">
+            <div class="research-details-container">
+                <div class="research">
+                    <div class="text-container">
+                        <h2 class="subtitle">Publications</h2>
+                            <br>
+                            <ul>
+                                <li> <b>Echevarria-Eirea, M.</b> (2024). “Obstáculos y retos estructurales en la España constitucional ¿Otra España es posible?,” review of <em>Obstáculos y retos estructurales en la España constitucional ¿Otra España es posible?</em>, by Ortega Gutiérrez, D. <em>Mediterranean Politics</em>, pp. 1-2. Available at: <a href="https://doi.org/10.1080/13629395.2024.2318120">https://doi.org/10.1080/13629395.2024.2318120</a>.</li>
+                                <br>
+                                <li> <b>Echevarria-Eirea, M.</b> (2023). <em>A True Party of the Populist Radical Right? Analysing VOX's populist discourse on Instagram</em>. POPULISMUS Working Papers, No. 16. Available at: <a href="http://www.populismus.gr/wp-content/uploads/2023/09/wp-16-upload-populismus3.pdf">http://www.populismus.gr/wp-content/uploads/2023/09/wp-16-upload-populismus3.pdf</a>. </li>
+                            </ul>
+                            <br>
+                        <h2 class="subtitle">In progress</h2>
+                            <br>
+                            <ul>
+                                <li>Do Length and Type Matter? Student Mobility and European Identity (with MCarmen Pérez-López). <em>Presented at Second Annual DAMES, GS, and TAM Joint Symposium, UNC-Chapel Hill</em>.</li>
+                                <br>
+                                <li> Soccer's Parasocial Effect: The Salah-Effect Revisited (with Jaime Lindh).</li>
+                                <br>
+                                <li> Immigration Effects and GAL-TAN Voting Across Europe: Harnessing YouTube Data. </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#teaching'">
+    </section>      
+    <section id="teaching">
+        <h1 class="title">Teaching</h1>
+        <div class="section-container">
+            <div class="teaching-details-container">
+                <div class="teaching">
+                    <div class="text-container">
+                        <h2 class="subtitle">UNC-Chapel Hill</h2>
+                        <br>
+                        <h3 class="subsubtitle">Teaching Assistant</h3>
+                            <br>
+                            <ul>
+                                <li> POLI 130: Comparative Politics, Prof. Ashley Anderson (F2024)</li>
+                                <br>
+                            </ul>
+                        <h3 class="subsubtitle">Grader</h3>
+                            <br>
+                            <ul>
+                                <li> POLI 130: Comparative Politics, Prof. Ashley Anderson (S2024)</li>
+                                <br>
+                                <li> POLI 130: Comparative Politics, Prof. Ashley Anderson (F2023)</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <p><a href="mailto:eche@unc.edu">eche@unc.edu</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li > <a href="#about">About</a></li>
+                    <li > <a href="#research">Research</a></li>
+                    <li > <a href="#teaching">Teaching</a></li>
+                    <li > <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p id="copyright" class="section__text__p1">Copyright © 2024 Marcos Echevarria-Eirea. All materials on this site are provided for personal use only.</p>
+    </footer>     
+    <script src="script.js"></script>
+</body>
+</html>

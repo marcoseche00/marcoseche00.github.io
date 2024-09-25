@@ -1,0 +1,155 @@
+/* General styling for the profile section */
+#profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    margin-bottom: 6rem;
+    text-align: center; /* Ensures any text is centered */
+}
+
+/* Media query for screen sizes below 1400px */
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+/* Media query for screen sizes below 1200px */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #research, .research-details-container {
+        margin-top: 2rem;
+    }
+    #teaching, .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 1rem; /* Adds margin around sections */
+    }
+    .section__pic-container {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    /* Paragraph text adjustment */
+    p {
+        word-wrap: break-word; /* Ensure long words break onto the next line */
+        overflow-wrap: break-word;
+    }
+
+    /* Font size and margin adjustments for smaller screens */
+    body, article, section {
+        font-size: 0.95rem; /* Reducing the font size */
+        margin-left: 1rem;
+        margin-right: 1rem; /* Adding margins to avoid text clashing */
+    }
+
+    .title {
+        font-size: 1.75rem; /* Slightly smaller title */
+    }
+
+    a {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    #about .title {
+        text-align: center; /* Center the text */
+        margin: 20px 0; /* Add some vertical spacing */
+    }
+}
+
+/* Media query for smaller screens (phone sizes) */
+@media screen and (max-width: 600px) {
+    #contact, footer {
+        height: 40vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 0.85rem; /* Smaller font for phones */
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p, .nav-links li a {
+        font-size: 0.9rem; /* Smaller font size for contact info */
+    }
+    .logo {
+        font-size: 1.25rem; /* Smaller logo size */
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: 46vw; /* Adjust size for smaller screens */
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__pic-container img {
+        width: 100%;
+        height: auto; /* Ensures the image fits within the circle */
+    }
+    .section__text__p2 {
+        font-size: 1.1rem;
+    }
+    .title {
+        font-size: 1.5rem; /* Smaller title for phones */
+    }
+    .text-container {
+        text-align: justify;
+        margin-left: 1rem; /* Add margin to prevent text clashing */
+        margin-right: 1rem;
+    }
+
+    /* Adjust margins for sections and content */
+    section {
+        margin: 1rem;
+    }
+
+    a {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    #about .title {
+        text-align: center; /* Center the text */
+        margin: 20px 0; /* Add some vertical spacing */
+    }
+}

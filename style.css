@@ -1,0 +1,431 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(#007FAE, #007FAE, #007FAE);
+}
+
+/* TRANSITION */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav, 
+.nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: #007FAE;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(#007FAE, #007FAE, #007FAE);
+}
+
+.logo{
+    font-size: 1rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 14px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a:hover {
+    color: #007FAE;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(#007FAE, #007FAE, #007FAE);
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(6px, 3px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(6px, -3px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 2vh; /* Reduced padding */
+    height: 95vh; /* Reduced height */
+    margin: 0 auto; /* Center the section */
+    max-width: 1000px; /* Set a maximum width to limit the section size */
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center; /* Center the section container */
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Reduced gap */
+    height: 70vh; /* Reduced height */
+}
+
+.section__pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Reduced height */
+    width: 400px; /* Reduced width for a smaller square */
+    margin: auto;
+    border-radius: 60px; /* Reduced roundness */
+    overflow: hidden; /* Ensures the image fits within the square */
+}
+
+.section__pic-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container proportionally */
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+    margin-bottom: 1rem; /* Increased margin below p1 */
+}
+
+.section__text__p2 {
+    font-size: 1rem; /* Reduced font size */
+    margin: 1rem 0; /* Added margin above and below p2 */
+}
+
+.title {
+    font-size: 2rem; /* Reduced font size */
+    text-align: center;
+    margin: 1rem 0; /* Added margin above and below the title */
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem; /* Reduced margin */
+    gap: 0.5rem; /* Reduced gap */
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 1.75rem; /* Reduced height */
+    margin-top: 1rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Adjusted gap for buttons */
+    margin-top: 1.25rem; /* Added margin above the button container */
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.8rem; /* Reduced padding */
+    width: 8rem; /* Reduced width */
+    border-radius: 1.5rem; /* Reduced border-radius */
+    background: white; /* Set a solid white background */
+    border: rgb(53, 53, 53) 0.1rem solid; /* Keep border size */
+}
+
+.btn-color-1, .btn-color-2 {
+    color: rgb(53, 53, 53);
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0); /* Same background for both buttons on hover */
+    color: #007FAE;
+}
+
+.btn-color-2 {
+    background: none; /* This can be adjusted if needed */
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid; /* Add border on hover */
+}
+
+/* Ensure the same background on hover for btn-color-1 */
+.btn-color-1:hover {
+    background: rgb(0, 0, 0); /* Keeping this for clarity */
+}
+
+.btn-container {
+    gap: 0.5rem; /* Reduced gap */
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+    padding-top: 15vh; /* Adjust this value to control the initial visibility */
+}
+
+.section-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 2rem; /* Space between the image and text */
+}
+
+.about-containers {
+    display: flex; /* Ensure this is here for proper layout */
+    flex-direction: column; /* Stack text vertically */
+}
+
+.about-details-container {
+    flex: 1; /* Allows the text container to grow */
+    max-width: 600px; /* Adjust max width as needed */
+    text-align: justify; /* Justify text within this container */
+}
+
+.about-pic {
+    border-radius: 2rem;
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.arrow {
+    position: absolute;
+    right: -6rem;
+    bottom: 2.5rem;
+}
+
+.section__pic-container {
+    flex: 1; /* Allows the image container to grow */
+    max-width: 400px; /* Adjust as needed */
+}
+
+#about .title {
+    margin-bottom: 1.5rem; /* Space between title and text */
+    margin-top: 0; /* Ensure there's no top margin to align with paragraph */
+    margin-left: 29px; /* Adjust this value to move the title to the right */
+}
+
+.text-container {
+    margin-top: 0; /* Ensure text starts at the top */
+    text-align: justify; /* Justify text within the text container */
+}
+
+.section-container a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.section-container a:hover {
+    color: #007FAE;
+    text-decoration-color: rgb(#007FAE, #007FAE, #007FAE);
+}
+
+#about ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Optional: Removes padding */
+    margin: 0; /* Optional: Removes margin */
+    margin-left: 20px;
+}
+
+/* RESEARCH & TEACHING SECTIONS */
+
+#research {
+    position: relative;
+    padding-top: 15vh; /* Adjust this value to control the initial visibility */
+}
+
+#research ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Optional: Removes padding */
+    margin: 0; /* Optional: Removes margin */
+    margin-left: 20px; /* Adjust this if needed */
+}
+
+#teaching {
+    position: relative;
+    padding-top: 15vh; /* Adjust this value to control the initial visibility */
+}
+
+#teaching ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Optional: Removes padding */
+    margin: 0; /* Optional: Removes margin */
+    margin-left: 20px; /* Decrease this value to move it to the left */
+}
+
+#research .title, #teaching .title {
+    margin-bottom: 1.5rem; /* Space between title and text */
+    margin-top: 0; /* Ensure there's no top margin to align with paragraph */
+    align-items: center;
+}
+
+/* CONTACT */
+
+#contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 0vh;
+    padding-top: 16vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start; /* Align items horizontally */
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+    margin: 0; /* Remove margin around text */
+}
+
+.contact-info-container a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.contact-info-container a:hover {
+    color: #007FAE;
+    text-decoration-color: rgb(#007FAE, #007FAE, #007FAE);
+}
+
+/* FOOTER */
